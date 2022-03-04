@@ -12,6 +12,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>Little Bird Handmade Toys</title>
   <link rel="icon" href="Little Bird Toys Logo (1).png" type="image/png">
+  <!--parallax format: https://www.w3schools.com/howto/howto_css_parallax.asp-->
+  <!--mailing list: JS Form Fields-->
+  <!--toy list: JS Postcard Generator/Random Testimonial-->
 </head>
 
 <body>
@@ -42,7 +45,7 @@
     <div class="outer-wrapper">
       <div class="content-wrapper">
         <main role="main">
-          <div class="first step text-center justify-content-center">
+          <div class="first-step">
             <h2>1. Select a Toy.</h2>
             <select name="toys" id="toys">
               <option selected disabled value="empty-state">Pick One</option>
@@ -53,11 +56,17 @@
               <option value="plane">Plane</option>
             </select>
           </div>
-          <div class="second-step text-center justify-content-center">
+          <div class="second-step">
             <h2>2. View them here!</h2>
-            <div class="justify-content-center" id="toy-pic"></div>
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                <div id="toy-pic"></div>
+              </div>
+              <div class="col-md-4"></div>
+            </div>
             <div>
-              <p id="toy-desc">Description</p>
+              <p id="toy-desc">Information about the toy will appear here.</p>
             </div>
           </div>
         </main>
@@ -165,13 +174,13 @@
             </center>
 
             <label for="nameField">Name:</label>
-            <input id="nameField" name="nameField" type="text" class="textfield" value="Example: John Doe" onFocus="clearName();" onBlur="resetName();">
+            <input id="nameField" name="nameField" type="text" class="textfield" value="Example: Tony Stark" onFocus="clearName();" onBlur="resetName();">
 
             <label for="addressField">Address:</label>
             <input id="addressField" name="addressField" type="text" class="textfield" value="Example: 805 W Manchester Blvd, Inglewood, CA 90301, USA" onFocus="clearAddress();" onBlur="resetAddress();">
 
             <label for="emailField">Email:</label>
-            <input id="emailField" name="emailField" type="text" class="textfield" value="Example: johndoe123@gmail.com" onFocus="clearEmail();" onBlur="resetEmail();">
+            <input id="emailField" name="emailField" type="text" class="textfield" value="Example: tonystark3000@starkindustries.com" onFocus="clearEmail();" onBlur="resetEmail();">
 
             <input id="submit" type="submit" name="submit" value="Sign Me Up!">
           </fieldset>
