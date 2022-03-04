@@ -348,8 +348,12 @@
   	border-bottom: 3px solid #f27b48;
   	margin-top: 15px;
   }
+  .first-step {
+    text-align:center;
+  }
   .second-step{
     margin: 0px;
+    text-align: center;
   }
   #toy-pic {
 	width: 450px;
